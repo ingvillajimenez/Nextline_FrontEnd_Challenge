@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+const axios = require('axios');
 
 class App extends Component {
   constructor(props) {
@@ -18,13 +19,27 @@ class App extends Component {
   }
 
   // Obtener las tareas de la API
+  // componentDidMount = () => {
+  //   fetch('/dev/task-type')
+  //   .then(response => response.json())
+  //   .then(myJson => {
+  //     this.setState({ tasks: myJson.data });
+  //   });
+  // }
+
   componentDidMount = () => {
-    fetch('/dev/task-type')
-    .then(response => response.json())
-    .then(myJson => {
-      this.setState({ tasks: myJson.data });
-    });
+    axios.get('/dev/task-type')
+    .then(response => {
+      // handle success
+      console.log(response.data.data);
+      this.setState({ tasks: response.data.data })
+    })
+    .catch(error => {
+      // handle error
+      console.log(error);
+    })
   }
+
 
   // Guardar nueva tarea creada
   newTask = event => {

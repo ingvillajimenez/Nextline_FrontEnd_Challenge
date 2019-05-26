@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+}
+
+p {
+  margin: 0px auto;
+  padding-left: 20px;
+}
+
+ul {
+  list-style-type: none;
+  /* padding-left: 0px; */
+  font-size: 20px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.App {
+  display: flex;
+}
+
+.container__crud {
+  width: 26%;
+  height: 100vh;
+  background-color: #eee;
+}
+
+.container__edit_delete {
+  height: 300px;
+  width: 100%;
+  border-bottom: 2px solid #ccc;
+  position: relative;
+}
+
+.div_delete-button {
+  position: absolute;
+  /* height: 50px; */
+  width: 100%;
+  /* border: 1px solid blue; */
+  bottom: 60px;
+}
+
+.delete-button {
+  width: 60%;
+  margin: auto;
+  display: block;
+  color: white;
+  font-size: 20px;
+  background-color: #B00020;
+  border-radius: 10px;
+  padding: 7px 0; 
+  cursor: pointer;
+}
+
+.container__newTask {
+  height: 220px;
+}
+
+.button_newTask {
+  width: 60%;
+  margin: auto;
+  display: block;
+  color: white;
+  font-size: 20px;
+  margin-top: 50px;
+  background-color: #0070E0;
+  border-radius: 10px;
+  padding: 7px 0; 
+  cursor: pointer;
+}
+
+.div_edit-button {
+  padding-top: 40px;
+  /* border: 1px solid red; */
+}
+
+.edit-button {
+  width: 60%;
+  margin: auto;
+  display: block;
+  color: white;
+  font-size: 20px;
+  /* margin-top: 70px; */
+  background-color: #018786;
+  border-radius: 10px;
+  padding: 7px 0; 
+  cursor: pointer;
+}
+
+.container__tasks {
+  width: 100vw;
+}
+
+.input_task, 
+.input_deadline,
+.input_description {
+  width: 40%;
+  margin-left: 15px;
+  height: 40px;
+  font-size: 22px;
+  padding-left: 5px;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #ccc;
+}
+
+.input_start, 
+.input_type {
+  width: 40%;
+  margin-left: 40px;
+  height: 40px;
+  font-size: 22px;
+  padding-left: 5px;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #ccc;
+}
+
+.button_save {
+  width: 10%;
+  margin-left: 30px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  /* margin-top: 70px; */
+  background-color: brown;
+  border-radius: 10px;
+  padding: 7px 0; 
+  cursor: pointer;
+  /* border: 1px solid transparent; */
+}
+
+.container__input-task {
+  height: 70px;
+  margin-top: 20px;
+  /* border: 1px solid blue; */
+}
+
+.container__taskList {
+  /* border: 1px solid green; */
+  /* height: 70px; */
+  margin-top: 80px;
+}
+
+.input-checkbox {
+  cursor: pointer;
+}
+
+.task {
+  margin-left: 10px;
+}
+
+.inputToEdit {
+  margin-left: 10px;
+  font-size: 16px;
+  height: 20px;
+  width: 200px;
+  border: 1px solid transparent;
+  border-bottom: 1px solid grey;
+  right: 20px;
+}
